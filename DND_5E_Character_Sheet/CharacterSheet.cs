@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DND_5E_Character_Sheet
 {
-    public partial class Form1 : Form
+    public partial class CharacterSheet : Form
     {
-        public Form1()
+        public CharacterSheet()
         {
             InitializeComponent();
         }
