@@ -2,24 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Linq;
 
 namespace DND_5E_Character_Sheet
 {
     public class Statistics
     {
         #region Fields
-        private int strengthScore;
+        private string strengthScore;
         private int strengthMod;
-        private int dexterityScore;
+        private string dexterityScore;
         private int dexterityMod;
-        private int constitutionScore;
+        private string constitutionScore;
         private int constitutionMod;
-        private int intelligenceScore;
+        private string intelligenceScore;
         private int intelligenceMod;
-        private int wisdomScore;
+        private string wisdomScore;
         private int wisdomMod;
-        private int charismaScore;
+        private string charismaScore;
         private int charismaMod;
         #endregion
 
@@ -27,7 +26,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Strength Score
         /// </summary>
-        public int StrengthScore
+        public string StrengthScore
         {
             get
             {
@@ -59,7 +58,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Dexterity Score
         /// </summary>
-        public int DexterityScore
+        public string DexterityScore
         {
             get
             {
@@ -91,7 +90,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Constitution Score
         /// </summary>
-        public int ConstitutionScore
+        public string ConstitutionScore
         {
             get
             {
@@ -123,7 +122,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Intelligence Score
         /// </summary>
-        public int IntelligenceScore
+        public string IntelligenceScore
         {
             get
             {
@@ -155,7 +154,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Wisdom Score
         /// </summary>
-        public int WisdomScore
+        public string WisdomScore
         {
             get
             {
@@ -187,7 +186,7 @@ namespace DND_5E_Character_Sheet
         /// <summary>
         /// Returns integer: Charisma Score
         /// </summary>
-        public int CharismaScore
+        public string CharismaScore
         {
             get
             {
@@ -214,6 +213,38 @@ namespace DND_5E_Character_Sheet
             {
                 charismaMod = value;
             }
+        }
+        #endregion
+
+        #region Methods
+        public void CalculateStrengthMod()
+        {
+            StrengthMod = (int.Parse(strengthScore) - 10) / 2;
+        }
+
+        public void CalculateDexterityMod()
+        {
+            DexterityMod = (int.Parse(dexterityScore) - 10) / 2;
+        }
+
+        public void CalculateConstitutionMod()
+        {
+            ConstitutionMod = (int.Parse(constitutionScore) - 10) / 2;
+        }
+
+        public void CalculateIntelligenceMod()
+        {
+            IntelligenceMod = (int.Parse(intelligenceScore) - 10) / 2;
+        }
+
+        public void CalculateWisdomMod()
+        {
+            WisdomMod = (int.Parse(wisdomScore) - 10) / 2;
+        }
+
+        public void CalculateCharismaMod()
+        {
+            CharismaMod = (int.Parse(charismaScore) - 10) / 2;
         }
         #endregion
     }

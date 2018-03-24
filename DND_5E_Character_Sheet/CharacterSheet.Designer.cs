@@ -1247,6 +1247,7 @@
             this.txtConScr.Name = "txtConScr";
             this.txtConScr.Size = new System.Drawing.Size(37, 20);
             this.txtConScr.TabIndex = 10;
+            this.txtConScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // txtIntMod
             // 
@@ -1344,6 +1345,7 @@
             this.txtChaScr.Name = "txtChaScr";
             this.txtChaScr.Size = new System.Drawing.Size(37, 20);
             this.txtChaScr.TabIndex = 13;
+            this.txtChaScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // label12
             // 
@@ -1360,6 +1362,7 @@
             this.txtIntScr.Name = "txtIntScr";
             this.txtIntScr.Size = new System.Drawing.Size(37, 20);
             this.txtIntScr.TabIndex = 11;
+            this.txtIntScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // label13
             // 
@@ -1376,6 +1379,7 @@
             this.txtWisScr.Name = "txtWisScr";
             this.txtWisScr.Size = new System.Drawing.Size(37, 20);
             this.txtWisScr.TabIndex = 12;
+            this.txtWisScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // label14
             // 
@@ -1392,6 +1396,7 @@
             this.txtDexScr.Name = "txtDexScr";
             this.txtDexScr.Size = new System.Drawing.Size(37, 20);
             this.txtDexScr.TabIndex = 9;
+            this.txtDexScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // txtStrScr
             // 
@@ -1399,6 +1404,7 @@
             this.txtStrScr.Name = "txtStrScr";
             this.txtStrScr.Size = new System.Drawing.Size(37, 20);
             this.txtStrScr.TabIndex = 8;
+            this.txtStrScr.TextChanged += new System.EventHandler(this.AttributeTextChange);
             // 
             // CharacterSheet
             // 
