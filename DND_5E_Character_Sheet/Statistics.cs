@@ -7,244 +7,98 @@ namespace DND_5E_Character_Sheet
 {
     public class Statistics
     {
-        #region Fields
-        private string strengthScore;
-        private int strengthMod;
-        private string dexterityScore;
-        private int dexterityMod;
-        private string constitutionScore;
-        private int constitutionMod;
-        private string intelligenceScore;
-        private int intelligenceMod;
-        private string wisdomScore;
-        private int wisdomMod;
-        private string charismaScore;
-        private int charismaMod;
-        #endregion
 
         #region Properties
         /// <summary>
         /// Returns integer: Strength Score
         /// </summary>
-        public string StrengthScore
-        {
-            get
-            {
-                return strengthScore;
-            }
-
-            set
-            {
-                strengthScore = value;
-            }
-        }
+        public string StrengthScore { get; set; }
 
         /// <summary>
         /// Returns integer: Strength Modifier
         /// </summary>
-        public int StrengthMod
-        {
-            get
-            {
-                return strengthMod;
-            }
-
-            set
-            {
-                strengthMod = value;
-            }
-        }
+        public int StrengthMod { get; set; }
 
         /// <summary>
         /// Returns integer: Dexterity Score
         /// </summary>
-        public string DexterityScore
-        {
-            get
-            {
-                return dexterityScore;
-            }
-
-            set
-            {
-                dexterityScore = value;
-            }
-        }
+        public string DexterityScore { get; set; }
 
         /// <summary>
         /// Returns integer: Dexterity Modifier
         /// </summary>
-        public int DexterityMod
-        {
-            get
-            {
-                return dexterityMod;
-            }
-
-            set
-            {
-                dexterityMod = value;
-            }
-        }
+        public int DexterityMod { get; set; }
 
         /// <summary>
         /// Returns integer: Constitution Score
         /// </summary>
-        public string ConstitutionScore
-        {
-            get
-            {
-                return constitutionScore;
-            }
-
-            set
-            {
-                constitutionScore = value;
-            }
-        }
+        public string ConstitutionScore { get; set; }
 
         /// <summary>
         /// Returns integer: Constitution Modifier
         /// </summary>
-        public int ConstitutionMod
-        {
-            get
-            {
-                return constitutionMod;
-            }
-
-            set
-            {
-                constitutionMod = value;
-            }
-        }
+        public int ConstitutionMod { get; set; }
 
         /// <summary>
         /// Returns integer: Intelligence Score
         /// </summary>
-        public string IntelligenceScore
-        {
-            get
-            {
-                return intelligenceScore;
-            }
-
-            set
-            {
-                intelligenceScore = value;
-            }
-        }
+        public string IntelligenceScore { get; set; }
 
         /// <summary>
         /// Returns integer: Intelligence Modifier
         /// </summary>
-        public int IntelligenceMod
-        {
-            get
-            {
-                return intelligenceMod;
-            }
-
-            set
-            {
-                intelligenceMod = value;
-            }
-        }
+        public int IntelligenceMod { get; set; }
 
         /// <summary>
         /// Returns integer: Wisdom Score
         /// </summary>
-        public string WisdomScore
-        {
-            get
-            {
-                return wisdomScore;
-            }
-
-            set
-            {
-                wisdomScore = value;
-            }
-        }
+        public string WisdomScore { get; set; }
 
         /// <summary>
         /// Returns integer: Wisdom Modifier
         /// </summary>
-        public int WisdomMod
-        {
-            get
-            {
-                return wisdomMod;
-            }
-
-            set
-            {
-                wisdomMod = value;
-            }
-        }
+        public int WisdomMod { get; set; }
 
         /// <summary>
         /// Returns integer: Charisma Score
         /// </summary>
-        public string CharismaScore
-        {
-            get
-            {
-                return charismaScore;
-            }
-
-            set
-            {
-                charismaScore = value;
-            }
-        }
+        public string CharismaScore { get; set; }
 
         /// <summary>
         /// Returns integer: Charisma Modifier
         /// </summary>
-        public int CharismaMod
-        {
-            get
-            {
-                return charismaMod;
-            }
-
-            set
-            {
-                charismaMod = value;
-            }
-        }
+        public int CharismaMod { get; set; }
         #endregion
 
         #region Methods
         public void CalculateStrengthMod()
         {
-            StrengthMod = (int.Parse(strengthScore) - 10) / 2;
+            StrengthMod = (int.Parse(StrengthScore) - 10) / 2;
         }
 
         public void CalculateDexterityMod()
         {
-            DexterityMod = (int.Parse(dexterityScore) - 10) / 2;
+            DexterityMod = (int.Parse(DexterityScore) - 10) / 2;
         }
 
         public void CalculateConstitutionMod()
         {
-            ConstitutionMod = (int.Parse(constitutionScore) - 10) / 2;
+            ConstitutionMod = (int.Parse(ConstitutionScore) - 10) / 2;
         }
 
         public void CalculateIntelligenceMod()
         {
-            IntelligenceMod = (int.Parse(intelligenceScore) - 10) / 2;
+            IntelligenceMod = (int.Parse(IntelligenceScore) - 10) / 2;
         }
 
         public void CalculateWisdomMod()
         {
-            WisdomMod = (int.Parse(wisdomScore) - 10) / 2;
+            WisdomMod = (int.Parse(WisdomScore) - 10) / 2;
         }
 
         public void CalculateCharismaMod()
         {
-            CharismaMod = (int.Parse(charismaScore) - 10) / 2;
+            CharismaMod = (int.Parse(CharismaScore) - 10) / 2;
         }
         #endregion
     }
